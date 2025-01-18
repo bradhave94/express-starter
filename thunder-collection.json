@@ -1,0 +1,57 @@
+{
+  "client": "Thunder Client",
+  "collectionName": "TypeScript Express API",
+  "dateExported": "2023-12-07T12:00:00.000Z",
+  "version": "1.1",
+  "folders": [],
+  "requests": [
+    {
+      "name": "Get Endpoint1 Data",
+      "method": "GET",
+      "url": "http://localhost:3000/endpoint1",
+      "headers": [],
+      "tests": []
+    },
+    {
+      "name": "Create Endpoint1 Data",
+      "method": "POST",
+      "url": "http://localhost:3000/endpoint1",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "body": {
+        "name": "John Doe",
+        "email": "john@example.com"
+      },
+      "tests": []
+    },
+    {
+      "name": "Get Endpoint2 Data",
+      "method": "GET",
+      "url": "http://localhost:3000/endpoint2",
+      "headers": [],
+      "tests": []
+    },
+    {
+      "name": "Create Endpoint2 Data",
+      "method": "POST",
+      "url": "http://localhost:3000/endpoint2",
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        }
+      ],
+      "body": {
+        "type": "example",
+        "data": {
+          "key": "value"
+        }
+      },
+      "tests": []
+    }
+  ]
+}

@@ -1,0 +1,456 @@
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T03:32:01.574Z"}
+{"duration":4,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/","statusCode":404,"timestamp":"2025-01-18T03:32:11.803Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/agent1","statusCode":404,"timestamp":"2025-01-18T03:32:30.098Z"}
+{"duration":6,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/","statusCode":200,"timestamp":"2025-01-18T03:33:39.217Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/favicon.ico","statusCode":404,"timestamp":"2025-01-18T03:33:39.251Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T03:34:07.256Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T03:34:14.176Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T03:34:26.645Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T03:34:32.948Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T03:34:43.022Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T03:34:46.746Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T03:34:55.567Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T03:34:59.048Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T03:35:20.450Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T03:35:23.665Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T03:35:32.018Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T03:35:40.288Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T03:35:43.737Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:16:54.428Z"}
+{"error":{},"level":"error","message":"Origin not allowed","path":"/endpoint1","timestamp":"2025-01-18T18:17:07.296Z"}
+{"error":{},"level":"error","message":"Origin not allowed","path":"/favicon.ico","timestamp":"2025-01-18T18:17:07.983Z"}
+{"error":{},"level":"error","message":"Origin not allowed","path":"/endpoint1","timestamp":"2025-01-18T18:17:15.408Z"}
+{"duration":12,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:17:34.846Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:18:02.824Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:18:11.071Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:18:16.220Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:18:20.694Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:18:27.204Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:19:32.280Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:19:49.223Z"}
+{"duration":6,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/","statusCode":200,"timestamp":"2025-01-18T18:20:42.511Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/","statusCode":200,"timestamp":"2025-01-18T18:20:48.916Z"}
+{"error":{},"level":"error","message":"Origin not allowed","path":"/endpoint1","timestamp":"2025-01-18T18:21:01.325Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/","statusCode":200,"timestamp":"2025-01-18T18:21:03.576Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:21:36.767Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:21:45.676Z"}
+{"duration":9,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/","statusCode":200,"timestamp":"2025-01-18T18:21:48.268Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/","statusCode":200,"timestamp":"2025-01-18T18:21:49.425Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/","statusCode":200,"timestamp":"2025-01-18T18:21:58.470Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/","statusCode":200,"timestamp":"2025-01-18T18:22:01.459Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:22:29.287Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:22:37.718Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:23:34.013Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:25:11.771Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:26:49.311Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:27:34.926Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:28:09.937Z"}
+{"duration":13,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/","statusCode":200,"timestamp":"2025-01-18T18:28:10.227Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/","statusCode":304,"timestamp":"2025-01-18T18:28:12.924Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/","statusCode":304,"timestamp":"2025-01-18T18:28:15.146Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/","statusCode":304,"timestamp":"2025-01-18T18:28:21.950Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/","statusCode":304,"timestamp":"2025-01-18T18:28:27.674Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:29:00.557Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:29:04.981Z"}
+{"duration":14,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/","statusCode":304,"timestamp":"2025-01-18T18:29:21.300Z"}
+{"duration":16,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:29:21.339Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/","statusCode":200,"timestamp":"2025-01-18T18:29:22.342Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/","statusCode":304,"timestamp":"2025-01-18T18:29:22.907Z"}
+{"duration":3,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:29:22.914Z"}
+{"duration":3,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/","statusCode":200,"timestamp":"2025-01-18T18:29:30.848Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/","statusCode":304,"timestamp":"2025-01-18T18:29:31.588Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:29:31.597Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:29:38.750Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:30:52.879Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:41:17.325Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:41:32.710Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:41:37.109Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:41:44.842Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:42:19.334Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/","statusCode":200,"timestamp":"2025-01-18T18:42:33.978Z"}
+{"duration":5,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:42:35.881Z"}
+{"duration":3,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:42:39.609Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:43:01.464Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/","statusCode":200,"timestamp":"2025-01-18T18:44:46.275Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:44:48.420Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:44:52.033Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:44:52.140Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:44:52.247Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:44:52.356Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:44:52.469Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:44:52.596Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:44:55.983Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:44:56.092Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:44:56.206Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:44:56.325Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:44:56.437Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:44:56.562Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:45:00.186Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:45:02.789Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/","statusCode":200,"timestamp":"2025-01-18T18:45:04.646Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:45:07.368Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:45:10.591Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:46:05.238Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:46:11.121Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:46:12.657Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:46:17.276Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:46:21.236Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:46:25.862Z"}
+{"duration":5,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/","statusCode":304,"timestamp":"2025-01-18T18:46:54.263Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/","statusCode":304,"timestamp":"2025-01-18T18:46:54.409Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/","statusCode":304,"timestamp":"2025-01-18T18:46:54.575Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/","statusCode":304,"timestamp":"2025-01-18T18:46:54.717Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/","statusCode":304,"timestamp":"2025-01-18T18:46:54.866Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/","statusCode":304,"timestamp":"2025-01-18T18:46:54.999Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/","statusCode":304,"timestamp":"2025-01-18T18:46:55.116Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/","statusCode":304,"timestamp":"2025-01-18T18:46:55.218Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/","statusCode":304,"timestamp":"2025-01-18T18:46:55.338Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/","statusCode":304,"timestamp":"2025-01-18T18:46:55.444Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/","statusCode":304,"timestamp":"2025-01-18T18:46:55.562Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/","statusCode":304,"timestamp":"2025-01-18T18:46:55.677Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/","statusCode":304,"timestamp":"2025-01-18T18:46:55.789Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/","statusCode":304,"timestamp":"2025-01-18T18:46:55.916Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/","statusCode":304,"timestamp":"2025-01-18T18:46:56.029Z"}
+{"duration":11,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:46:58.106Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:46:58.190Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:46:58.284Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:46:58.431Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:46:58.555Z"}
+{"duration":3,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:46:58.714Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:46:58.839Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:46:58.977Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:46:59.103Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:46:59.240Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:46:59.728Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:46:59.806Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:46:59.952Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:47:00.111Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:47:00.271Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:47:00.569Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:47:00.735Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:47:00.880Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:47:05.014Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:47:11.646Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:47:21.758Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:47:26.075Z"}
+{"duration":6,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:47:26.158Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:47:26.163Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:47:26.168Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:47:26.175Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:47:26.181Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:47:26.186Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:47:26.190Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:47:29.414Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:47:29.504Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:47:29.634Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:47:29.788Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:47:29.918Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:47:30.057Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:47:30.173Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:47:30.277Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:47:30.395Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:47:30.505Z"}
+{"duration":3,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:47:30.630Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:47:30.744Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:47:30.875Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:47:30.984Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:47:31.114Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:47:31.257Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:47:31.378Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:47:31.501Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:47:31.629Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:47:31.764Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:47:31.883Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:47:32.006Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:47:32.152Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:47:32.276Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:47:32.400Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:47:32.537Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:47:34.137Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:48:05.319Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:48:12.398Z"}
+{"duration":7,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:48:14.919Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:48:15.034Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:48:15.163Z"}
+{"duration":3,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:48:15.310Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:48:15.437Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:48:15.553Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:48:15.664Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:48:15.786Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:48:15.912Z"}
+{"duration":3,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:48:16.036Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:48:16.159Z"}
+{"duration":3,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:48:16.305Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:48:16.430Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:48:16.545Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:48:23.379Z"}
+{"duration":3,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:48:25.157Z"}
+{"duration":3,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:48:25.953Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:48:26.319Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:48:26.449Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:48:26.775Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:48:27.617Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:48:28.317Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:48:29.125Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:48:29.959Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:48:30.817Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:48:31.659Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":429,"timestamp":"2025-01-18T18:48:32.765Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:48:35.809Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:48:37.275Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:48:38.251Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:48:39.220Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:48:40.196Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:48:41.246Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:48:42.237Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:48:43.054Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:49:08.403Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:49:14.670Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:49:21.693Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:51:59.758Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:52:46.902Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:52:54.392Z"}
+{"duration":6,"ip":"::1","level":"info","message":"Request processed","method":"GET","path":"/","statusCode":200,"timestamp":"2025-01-18T18:53:39.408Z"}
+{"duration":6,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:53:40.034Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:53:40.144Z"}
+{"duration":3,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:53:40.409Z"}
+{"duration":3,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:53:40.534Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:53:40.665Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:53:40.789Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:53:40.921Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:53:41.046Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:53:41.156Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:53:41.283Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:53:41.390Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:53:41.509Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:53:41.640Z"}
+{"duration":3,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:53:41.780Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:53:41.926Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:53:42.056Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:53:42.189Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:53:42.318Z"}
+{"duration":3,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:28.909Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:29.953Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":400,"timestamp":"2025-01-18T18:54:31.539Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:33.998Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:34.111Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:34.231Z"}
+{"duration":3,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:34.346Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:34.463Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:34.573Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:34.682Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:34.796Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:34.908Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:35.014Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:35.119Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:36.866Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:37.001Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:37.127Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:37.251Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:37.372Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:37.486Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:37.598Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:37.721Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:37.829Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:37.942Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:38.066Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:38.889Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:38.996Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:39.115Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:39.235Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:39.360Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:39.486Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:39.612Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:39.737Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:39.863Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:39.984Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:40.099Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:40.832Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:40.893Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:40.950Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.011Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.045Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.057Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.120Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.152Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.165Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.189Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.229Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.260Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.277Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.296Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.327Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.334Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.370Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.383Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.402Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.449Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.451Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.471Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.475Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.492Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.511Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.557Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.559Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.581Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.583Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.604Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.605Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.619Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.668Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.670Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.699Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.702Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.709Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.717Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.731Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.777Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.779Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.808Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.811Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.823Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.825Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.838Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.885Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.889Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.916Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.918Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.931Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.933Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.949Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.991Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:41.995Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:42.021Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:42.026Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:42.040Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:42.056Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:42.104Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:42.128Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:42.132Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:42.150Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:42.161Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:42.213Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:42.234Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:42.255Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:42.281Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:42.322Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:42.341Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:42.361Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:42.430Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:42.449Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:42.466Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:42.560Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:42.579Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:54:42.699Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:55:30.686Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:55:36.337Z"}
+{"duration":9,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:58:37.697Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:58:40.405Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:58:40.411Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:58:40.417Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:58:40.422Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:58:40.428Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:58:40.434Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:58:40.440Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:58:40.447Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:58:40.454Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:58:40.462Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:58:40.468Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":400,"timestamp":"2025-01-18T18:58:43.487Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":400,"timestamp":"2025-01-18T18:58:47.161Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":400,"timestamp":"2025-01-18T18:58:58.869Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":400,"timestamp":"2025-01-18T18:59:03.806Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":400,"timestamp":"2025-01-18T18:59:04.819Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T18:59:17.659Z"}
+{"duration":10,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:59:38.292Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T18:59:50.128Z"}
+{"duration":4,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T19:00:11.103Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T19:00:16.011Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T19:00:16.446Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T19:00:16.452Z"}
+{"duration":3,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":400,"timestamp":"2025-01-18T19:00:23.006Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T19:01:09.899Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T19:01:18.341Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T19:01:22.480Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T19:04:09.049Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T19:04:21.383Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T19:04:40.079Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T19:04:55.901Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T19:06:47.397Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T19:06:59.014Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T19:07:25.881Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T19:07:36.549Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T19:07:44.838Z"}
+{"error":{"code":"INTERNAL_ERROR","message":"Invalid response format","name":"ApiError","status":500},"level":"error","message":"Invalid response format","path":"/endpoint1","timestamp":"2025-01-18T19:07:51.420Z"}
+{"duration":10,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/endpoint1","statusCode":500,"timestamp":"2025-01-18T19:07:51.423Z"}
+{"error":{"code":"INTERNAL_ERROR","message":"Invalid response format","name":"ApiError","status":500},"level":"error","message":"Invalid response format","path":"/endpoint1","timestamp":"2025-01-18T19:07:58.691Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/endpoint1","statusCode":500,"timestamp":"2025-01-18T19:07:58.692Z"}
+{"error":{"code":"INTERNAL_ERROR","message":"Invalid response format","name":"ApiError","status":500},"level":"error","message":"Invalid response format","path":"/endpoint1","timestamp":"2025-01-18T19:07:59.257Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/endpoint1","statusCode":500,"timestamp":"2025-01-18T19:07:59.258Z"}
+{"error":{"code":"INTERNAL_ERROR","message":"Invalid response format","name":"ApiError","status":500},"level":"error","message":"Invalid response format","path":"/endpoint1","timestamp":"2025-01-18T19:07:59.942Z"}
+{"duration":3,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/endpoint1","statusCode":500,"timestamp":"2025-01-18T19:07:59.944Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":400,"timestamp":"2025-01-18T19:08:00.884Z"}
+{"error":{"code":"INTERNAL_ERROR","message":"Invalid response format","name":"ApiError","status":500},"level":"error","message":"Invalid response format","path":"/endpoint1","timestamp":"2025-01-18T19:08:06.604Z"}
+{"duration":3,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/endpoint1","statusCode":500,"timestamp":"2025-01-18T19:08:06.606Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T19:08:31.263Z"}
+{"error":{"code":"INTERNAL_ERROR","message":"Invalid response format","name":"ApiError","status":500},"level":"error","message":"Invalid response format","path":"/endpoint1","timestamp":"2025-01-18T19:08:34.734Z"}
+{"duration":9,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/endpoint1","statusCode":500,"timestamp":"2025-01-18T19:08:34.736Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T19:09:11.315Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T19:09:15.749Z"}
+{"error":{"code":"INTERNAL_ERROR","message":"Invalid response format","name":"ApiError","status":500},"level":"error","message":"Invalid response format","path":"/endpoint1","timestamp":"2025-01-18T19:09:16.028Z"}
+{"duration":10,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/endpoint1","statusCode":500,"timestamp":"2025-01-18T19:09:16.032Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T19:09:25.581Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T19:09:31.808Z"}
+{"error":{"code":"INTERNAL_ERROR","message":"Invalid response format","name":"ApiError","status":500},"level":"error","message":"Invalid response format","path":"/endpoint1","timestamp":"2025-01-18T19:09:34.840Z"}
+{"duration":10,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/endpoint1","statusCode":500,"timestamp":"2025-01-18T19:09:34.843Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T19:10:32.659Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T19:10:39.374Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T19:10:42.888Z"}
+{"duration":7,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":400,"timestamp":"2025-01-18T19:10:45.807Z"}
+{"duration":3,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T19:10:58.457Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T19:11:05.875Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T19:11:09.353Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T19:11:09.977Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":400,"timestamp":"2025-01-18T19:11:12.365Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T19:11:16.825Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T19:11:22.956Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T19:11:27.679Z"}
+{"level":"info","message":"Server running on port 3000 in development mode","timestamp":"2025-01-18T19:11:30.460Z"}
+{"duration":7,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":400,"timestamp":"2025-01-18T19:13:21.791Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":400,"timestamp":"2025-01-18T19:13:27.625Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":400,"timestamp":"2025-01-18T19:13:36.051Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":400,"timestamp":"2025-01-18T19:13:36.735Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":400,"timestamp":"2025-01-18T19:13:45.862Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":400,"timestamp":"2025-01-18T19:13:45.866Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":400,"timestamp":"2025-01-18T19:13:45.870Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":400,"timestamp":"2025-01-18T19:13:45.875Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":400,"timestamp":"2025-01-18T19:13:45.880Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":400,"timestamp":"2025-01-18T19:13:45.886Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":400,"timestamp":"2025-01-18T19:13:45.892Z"}
+{"duration":2,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":400,"timestamp":"2025-01-18T19:13:45.898Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":400,"timestamp":"2025-01-18T19:13:45.903Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":400,"timestamp":"2025-01-18T19:13:45.908Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":400,"timestamp":"2025-01-18T19:13:45.915Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":400,"timestamp":"2025-01-18T19:13:48.976Z"}
+{"duration":3,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T19:14:08.753Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T19:14:11.235Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":400,"timestamp":"2025-01-18T19:14:15.488Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T19:14:52.228Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T19:14:58.784Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T19:15:00.838Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T19:15:01.738Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":400,"timestamp":"2025-01-18T19:15:02.791Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":400,"timestamp":"2025-01-18T19:15:03.879Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":400,"timestamp":"2025-01-18T19:15:04.439Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T19:15:06.537Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T19:15:06.541Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T19:15:06.545Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T19:15:06.548Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T19:15:06.552Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T19:15:06.557Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T19:15:06.561Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T19:15:06.564Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T19:15:06.569Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T19:15:06.573Z"}
+{"duration":0,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":201,"timestamp":"2025-01-18T19:15:06.577Z"}
+{"duration":1,"ip":"::1","level":"info","message":"Request processed","method":"POST","path":"/","statusCode":400,"timestamp":"2025-01-18T19:15:19.245Z"}

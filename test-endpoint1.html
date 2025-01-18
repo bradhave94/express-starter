@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Endpoint1 Test</title>
+    <style>
+        .test-button { margin: 5px; padding: 5px; }
+        .error { color: red; }
+        .success { color: green; }
+        .test-group { margin: 20px 0; padding: 10px; border: 1px solid #ccc; }
+        pre { background: #f5f5f5; padding: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Endpoint1 Tests</h1>
+
+    <!-- Valid Tests -->
+    <div class="test-group">
+        <h2>Valid Tests</h2>
+        <button class="test-button" onclick="testValidData()">Test Valid Data</button>
+        <button class="test-button" onclick="testWithCategory()">Test With Category</button>
+    </div>
+
+    <!-- Invalid Data Tests -->
+    <div class="test-group">
+        <h2>Invalid Data Tests</h2>
+        <button class="test-button" onclick="testInvalidName()">Test Invalid Name</button>
+        <button class="test-button" onclick="testInvalidEmail()">Test Invalid Email</button>
+        <button class="test-button" onclick="testMissingRequired()">Test Missing Required Fields</button>
+    </div>
+
+    <!-- Rate Limit Test -->
+    <div class="test-group">
+        <h2>Rate Limit Test</h2>
+        <button class="test-button" onclick="testRateLimit()">Test Rate Limit (11 requests)</button>
+    </div>
+
+    <div id="result"></div>
+
+    <script>
+        const API_URL = 'http://localhost:3000';
+        const resultDiv = document.getElementById('result');
+
+        function displayResult(response, error = false) {
+            const pre = document.createElement('pre');
+            pre.className = error ? 'error' : 'success';
+            pre.textContent = typeof response === 'string' ? response : JSON.stringify(response, null, 2);
+            resultDiv.insertBefore(pre, resultDiv.firstChild);
+        }
+
+        async function makeRequest(endpoint, data = null, method = 'GET') {
+            try {
+                const response = await fetch(`${API_URL}${endpoint}`, {
+                    method,
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: data ? JSON.stringify(data) : undefined
+                });
+                const result = await response.json();
+                displayResult(result, !response.ok);
+                return result;
+            } catch (error) {
+                displayResult(`Error: ${error.message}`, true);
+                throw error;
+            }
+        }
+
+        // Valid Tests
+        async function testValidData() {
+            const data = {
+                name: 'John Doe',
+                email: 'john@example.com',
+                category: 'general'
+            };
+            await makeRequest('/endpoint1', data, 'POST');
+        }
+
+        async function testWithCategory() {
+            const data = {
+                name: 'Jane Smith',
+                email: 'jane@example.com',
+                category: 'technical'
+            };
+            await makeRequest('/endpoint1', data, 'POST');
+        }
+
+        // Invalid Data Tests
+        async function testInvalidName() {
+            const data = {
+                name: 'J',  // Too short
+                email: 'john@example.com',
+                category: 'general'
+            };
+            await makeRequest('/endpoint1', data, 'POST');
+        }
+
+        async function testInvalidEmail() {
+            const data = {
+                name: 'John Doe',
+                email: 'not-an-email',
+                category: 'general'
+            };
+            await makeRequest('/endpoint1', data, 'POST');
+        }
+
+        async function testMissingRequired() {
+            const data = {
+
+                // Missing email
+            };
+            await makeRequest('/endpoint1', data, 'POST');
+        }
+
+        // Rate Limit Test
+        async function testRateLimit() {
+            const data = {
+                name: 'John Doe',
+                email: 'john@example.com',
+                category: 'general'
+            };
+
+            for (let i = 0; i < 11; i++) {
+                await makeRequest('/endpoint1', data, 'POST');
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{"error":{},"level":"error","message":"Origin not allowed","path":"/endpoint1","timestamp":"2025-01-18T18:17:07.296Z"}
+{"error":{},"level":"error","message":"Origin not allowed","path":"/favicon.ico","timestamp":"2025-01-18T18:17:07.983Z"}
+{"error":{},"level":"error","message":"Origin not allowed","path":"/endpoint1","timestamp":"2025-01-18T18:17:15.408Z"}
+{"error":{},"level":"error","message":"Origin not allowed","path":"/endpoint1","timestamp":"2025-01-18T18:21:01.325Z"}
+{"error":{"code":"INTERNAL_ERROR","message":"Invalid response format","name":"ApiError","status":500},"level":"error","message":"Invalid response format","path":"/endpoint1","timestamp":"2025-01-18T19:07:51.420Z"}
+{"error":{"code":"INTERNAL_ERROR","message":"Invalid response format","name":"ApiError","status":500},"level":"error","message":"Invalid response format","path":"/endpoint1","timestamp":"2025-01-18T19:07:58.691Z"}
+{"error":{"code":"INTERNAL_ERROR","message":"Invalid response format","name":"ApiError","status":500},"level":"error","message":"Invalid response format","path":"/endpoint1","timestamp":"2025-01-18T19:07:59.257Z"}
+{"error":{"code":"INTERNAL_ERROR","message":"Invalid response format","name":"ApiError","status":500},"level":"error","message":"Invalid response format","path":"/endpoint1","timestamp":"2025-01-18T19:07:59.942Z"}
+{"error":{"code":"INTERNAL_ERROR","message":"Invalid response format","name":"ApiError","status":500},"level":"error","message":"Invalid response format","path":"/endpoint1","timestamp":"2025-01-18T19:08:06.604Z"}
+{"error":{"code":"INTERNAL_ERROR","message":"Invalid response format","name":"ApiError","status":500},"level":"error","message":"Invalid response format","path":"/endpoint1","timestamp":"2025-01-18T19:08:34.734Z"}
+{"error":{"code":"INTERNAL_ERROR","message":"Invalid response format","name":"ApiError","status":500},"level":"error","message":"Invalid response format","path":"/endpoint1","timestamp":"2025-01-18T19:09:16.028Z"}
+{"error":{"code":"INTERNAL_ERROR","message":"Invalid response format","name":"ApiError","status":500},"level":"error","message":"Invalid response format","path":"/endpoint1","timestamp":"2025-01-18T19:09:34.840Z"}

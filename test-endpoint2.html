@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Endpoint2 Test</title>
+    <style>
+        .test-button { margin: 5px; padding: 5px; }
+        .error { color: red; }
+        .success { color: green; }
+        .test-group { margin: 20px 0; padding: 10px; border: 1px solid #ccc; }
+        pre { background: #f5f5f5; padding: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Endpoint2 (Task Management) Tests</h1>
+
+    <!-- Valid Tests -->
+    <div class="test-group">
+        <h2>Valid Tests</h2>
+        <button class="test-button" onclick="testValidTask()">Test Valid Task</button>
+        <button class="test-button" onclick="testWithOptionalFields()">Test With Optional Fields</button>
+        <button class="test-button" onclick="testDryRun()">Test Dry Run</button>
+    </div>
+
+    <!-- Invalid Type Tests -->
+    <div class="test-group">
+        <h2>Invalid Type Tests</h2>
+        <button class="test-button" onclick="testInvalidTaskType()">Test Invalid Task Type</button>
+        <button class="test-button" onclick="testTestInTaskType()">Test 'test' in Task Type</button>
+    </div>
+
+    <!-- Invalid Data Tests -->
+    <div class="test-group">
+        <h2>Invalid Data Tests</h2>
+        <button class="test-button" onclick="testMissingData()">Test Missing Data</button>
+        <button class="test-button" onclick="testInvalidPriority()">Test Invalid Priority</button>
+        <button class="test-button" onclick="testInvalidTags()">Test Invalid Tags</button>
+    </div>
+
+    <!-- Rate Limit Test -->
+    <div class="test-group">
+        <h2>Rate Limit Test</h2>
+        <button class="test-button" onclick="testRateLimit()">Test Rate Limit (11 requests)</button>
+    </div>
+
+    <div id="result"></div>
+
+    <script>
+        const API_URL = 'http://localhost:3000';
+        const resultDiv = document.getElementById('result');
+
+        function displayResult(response, error = false) {
+            const pre = document.createElement('pre');
+            pre.className = error ? 'error' : 'success';
+            pre.textContent = typeof response === 'string' ? response : JSON.stringify(response, null, 2);
+            resultDiv.insertBefore(pre, resultDiv.firstChild);
+        }
+
+        async function makeRequest(endpoint, data = null, method = 'GET') {
+            try {
+                const response = await fetch(`${API_URL}${endpoint}`, {
+                    method,
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: data ? JSON.stringify(data) : undefined
+                });
+                const result = await response.json();
+                displayResult(result, !response.ok);
+                return result;
+            } catch (error) {
+                displayResult(`Error: ${error.message}`, true);
+                throw error;
+            }
+        }
+
+        // Valid Tests
+        async function testValidTask() {
+            const data = {
+                type: 'task1',
+                data: { status: 'pending' },
+                priority: 3,
+                tags: ['api', 'test']
+            };
+            await makeRequest('/endpoint2', data, 'POST');
+        }
+
+        async function testWithOptionalFields() {
+            const data = {
+                type: 'task2',
+                data: { status: 'pending' },
+                priority: 1
+            };
+            await makeRequest('/endpoint2', data, 'POST');
+        }
+
+        async function testDryRun() {
+            const data = {
+                type: 'task3',
+                data: { status: 'pending' },
+                priority: 2,
+                dryRun: true
+            };
+            await makeRequest('/endpoint2', data, 'POST');
+        }
+
+        // Invalid Type Tests
+        async function testInvalidTaskType() {
+            const data = {
+                type: 'invalid',
+                data: { status: 'pending' },
+                priority: 3
+            };
+            await makeRequest('/endpoint2', data, 'POST');
+        }
+
+        async function testTestInTaskType() {
+            const data = {
+                type: 'test_task1',
+                data: { status: 'pending' },
+                priority: 3
+            };
+            await makeRequest('/endpoint2', data, 'POST');
+        }
+
+        // Invalid Data Tests
+        async function testMissingData() {
+            const data = {
+                type: 'task1',
+                priority: 3
+            };
+            await makeRequest('/endpoint2', data, 'POST');
+        }
+
+        async function testInvalidPriority() {
+            const data = {
+                type: 'task1',
+                data: { status: 'pending' },
+                priority: 10  // Out of range
+            };
+            await makeRequest('/endpoint2', data, 'POST');
+        }
+
+        async function testInvalidTags() {
+            const data = {
+                type: 'task1',
+                data: { status: 'pending' },
+                priority: 3,
+                tags: Array(11).fill('tag')  // Too many tags
+            };
+            await makeRequest('/endpoint2', data, 'POST');
+        }
+
+        // Rate Limit Test
+        async function testRateLimit() {
+            const data = {
+                type: 'task1',
+                data: { status: 'pending' },
+                priority: 3
+            };
+
+            for (let i = 0; i < 11; i++) {
+                await makeRequest('/endpoint2', data, 'POST');
+            }
+        }
+    </script>
+</body>
+</html>
