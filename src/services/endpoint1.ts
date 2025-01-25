@@ -1,7 +1,6 @@
 import type { Endpoint1Response, Endpoint1Data } from '../controllers/endpoint1';
 
 export const getData = async (): Promise<Endpoint1Response> => {
-  // Implement your business logic here
   return {
     message: 'Endpoint 1 data',
     data: {

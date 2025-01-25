@@ -2,7 +2,26 @@
 
 This document provides step-by-step instructions for adding new endpoints to the API.
 
-## Step 1: Define Schema and Types
+## Step 1: Environment Setup
+
+```typescript
+// In config/index.ts
+const env = cleanEnv(Bun.env, {
+  NODE_ENV: str({ choices: ['development', 'test', 'production'] }),
+  PORT: num(),
+  // ... other env vars
+});
+
+// In server.ts
+app.listen(config.port, () => {
+  console.log(`Server running in ${config.env} mode on port ${config.port}`);
+}).on('error', (err) => {
+  console.error('Server failed to start:', err);
+  process.exit(1);
+});
+```
+
+## Step 2: Define Schema and Types
 
 Create a Zod schema in `/src/routes/{endpoint-name}.ts`:
 
@@ -43,7 +62,7 @@ interface NewEndpointData {
 }
 ```
 
-## Step 2: Create Service
+## Step 3: Create Service
 
 Add service in `/src/services/{endpoint-name}.ts`:
 
@@ -75,7 +94,7 @@ export const createData = async (data: CreateNewEndpointRequest): Promise<NewEnd
 };
 ```
 
-## Step 3: Create Controller
+## Step 4: Create Controller
 
 Add controller in `/src/controllers/{endpoint-name}.ts`:
 
@@ -113,7 +132,7 @@ export const createData = async (
 };
 ```
 
-## Step 4: Create Route
+## Step 5: Create Route
 
 Add route file in `/src/routes/{endpoint-name}.ts`:
 
@@ -163,7 +182,7 @@ router.post('/',
 export default router;
 ```
 
-## Step 5: Create Test Page
+## Step 6: Create Test Page
 
 Create a test page in `/public/test-{endpoint-name}.html`:
 
@@ -240,7 +259,7 @@ Create a test page in `/public/test-{endpoint-name}.html`:
 </html>
 ```
 
-## Step 6: Register Route
+## Step 7: Register Route
 
 Update `/src/routes/index.ts`:
 
@@ -254,7 +273,7 @@ router.use('/{endpoint-name}', newEndpointRouter);
 export default router;
 ```
 
-## Step 7: Update Documentation
+## Step 8: Update Documentation
 
 1. Add endpoint documentation to README.md
 2. Update Thunder Client collection (thunder-collection.json)

@@ -1,6 +1,6 @@
 # TypeScript Express API
 
-A production-ready TypeScript Express API with comprehensive security features, logging, and monitoring.
+A production-ready TypeScript Express API with comprehensive security features, logging, and monitoring, powered by Bun.
 
 ## Features
 
@@ -10,7 +10,7 @@ A production-ready TypeScript Express API with comprehensive security features, 
 - Rate limiting (100 requests per 10 seconds)
 - Request validation with Zod schemas
 - Security headers with Helmet.js
-- Winston logger for comprehensive logging
+- Built-in logging with Bun's console
 - Error handling with consistent response format
 - Request logging with performance metrics
 - Clean architecture with dependency injection
@@ -35,20 +35,19 @@ A production-ready TypeScript Express API with comprehensive security features, 
 
 ## Prerequisites
 
-- Node.js 18+
-- npm or yarn
+- Bun >= 1.0.0
 
 ## Installation
 
 1. Clone the repository
 2. Install dependencies:
    ```bash
-   npm install
+   bun install
    ```
 3. Copy `.env.example` to `.env` and update the values
 4. Build the project:
    ```bash
-   npm run build
+   bun run build
    ```
 
 ## Environment Variables
@@ -62,11 +61,12 @@ A production-ready TypeScript Express API with comprehensive security features, 
 
 ## Available Scripts
 
-- `npm run dev` - Start development server with hot reload
-- `npm run build` - Build for production
-- `npm start` - Start production server
-- `npm run lint` - Run ESLint
-- `npm run format` - Format code with Prettier
+- `bun run dev` - Start development server with hot reload
+- `bun run build` - Build for production
+- `bun start` - Start production server
+- `bun run lint` - Run ESLint
+- `bun run format` - Format code with Prettier
+- `bun test` - Run tests
 
 ## Adding New Endpoints
 

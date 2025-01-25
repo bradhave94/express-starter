@@ -1,23 +1,19 @@
 import type { Request, Response, NextFunction } from 'express';
-import logger from '../utils/logger';
-import type { ErrorResponse } from '../interfaces/common';
+import { config } from '../config';
 
-export const errorHandler = (
-  err: Error,
-  req: Request,
-  res: Response,
-  next: NextFunction
-) => {
-  logger.error(err.message, { error: err, path: req.path });
+export const errorHandler = (err: Error, req: Request, res: Response, next: NextFunction) => {
+  // Log the error with request context
+  console.error('Error:', {
+    message: err.message,
+    stack: err.stack,
+    path: req.path,
+    method: req.method
+  });
 
-  const errorResponse: ErrorResponse = {
-    status: 500,
-    message: 'Internal Server Error'
-  };
-
-  if (err instanceof Error) {
-    errorResponse.message = err.message;
-  }
-
-  res.status(errorResponse.status).json({ error: errorResponse });
+  res.status(500).json({
+    success: false,
+    error: {
+      message: config.env === 'development' ? err.message : 'Internal Server Error'
+    }
+  });
 };

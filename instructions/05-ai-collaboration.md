@@ -82,6 +82,38 @@ This document provides guidelines for AI assistants working with this codebase.
    }
    ```
 
+4. **Environment Configuration**
+   ```typescript
+   // DO THIS:
+   import { cleanEnv, str } from 'envalid';
+   const env = cleanEnv(Bun.env, {
+     API_KEY: str()
+   });
+
+   // NOT THIS:
+   const apiKey = process.env.API_KEY;
+   ```
+
+5. **Crypto Operations**
+   ```typescript
+   // DO THIS:
+   import { randomUUID } from 'node:crypto';
+
+   // NOT THIS:
+   import crypto from 'crypto';
+   ```
+
+6. **Server Setup**
+   ```typescript
+   // DO THIS:
+   app.listen(port, () => {
+     console.log(`Server running on port ${port}`);
+   });
+
+   // NOT THIS:
+   export default { port, fetch: (req) => app.handle(req) };
+   ```
+
 ## Security Considerations
 
 1. **Input Validation**
@@ -197,3 +229,40 @@ This document provides guidelines for AI assistants working with this codebase.
   - [ ] Thunder Client updated
   - [ ] Error cases covered
   - [ ] Edge cases considered
+
+## Bun-Specific Guidelines
+
+1. **Environment Handling**
+   ```typescript
+   // DO THIS:
+   import { cleanEnv, str } from 'envalid';
+   const env = cleanEnv(Bun.env, {
+     API_KEY: str()
+   });
+
+   // NOT THIS:
+   const apiKey = process.env.API_KEY;
+   ```
+
+2. **Crypto Operations**
+   ```typescript
+   // DO THIS:
+   import { randomUUID } from 'node:crypto';
+
+   // NOT THIS:
+   import crypto from 'crypto';
+   ```
+
+3. **Express Setup**
+   ```typescript
+   // DO THIS:
+   app.listen(port, () => {
+     console.log(`Server running on port ${port}`);
+   });
+
+   // NOT THIS:
+   export default {
+     port,
+     fetch: (req) => app.handle(req)
+   };
+   ```

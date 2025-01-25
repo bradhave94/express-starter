@@ -1,13 +1,14 @@
+import { beforeAll, afterAll, afterEach } from 'bun:test';
 import express from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
-import { config } from './config';
-import routes from './routes';
-import { errorHandler } from './middleware/error';
-import { requestLogger } from './middleware/requestLogger';
-import logger from './utils/logger';
+import { config } from '../config';
+import routes from '../routes';
+import { errorHandler } from '../middleware/error';
+import { requestLogger } from '../middleware/requestLogger';
+import { csrfProtection } from '../middleware/csrf';
 
-// Create Express app
+// Create test app
 const app = express();
 
 // Add logging middleware first
@@ -31,7 +32,7 @@ app.use((req, res, next) => {
   const secFetchSite = req.headers['sec-fetch-site'];
   const secFetchMode = req.headers['sec-fetch-mode'];
 
-  // Block if no origin or user-agent (like Postman)
+  // Block if no origin or user-agent
   if (!origin || !userAgent) {
     return res.status(403).json({
       success: false,
@@ -42,7 +43,7 @@ app.use((req, res, next) => {
     });
   }
 
-  // Block if not from a browser (Sec-Fetch headers are only sent by modern browsers)
+  // Block if not from a browser
   if (!secFetchSite || !secFetchMode) {
     console.log('Blocked: Missing Sec-Fetch headers');
     return res.status(403).json({
@@ -69,25 +70,31 @@ app.use((req, res, next) => {
   next();
 });
 
-// CORS configuration for browsers
+// CORS configuration
 app.use(cors({
   origin: config.cors.origins,
   credentials: config.cors.credentials,
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  exposedHeaders: ['x-csrf-token']
+  exposedHeaders: ['x-csrf-token']  // Important: expose the CSRF token header
 }));
 
-// Body parsing middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
-// Routes
 app.use('/', routes);
-
-// Error handling
 app.use(errorHandler);
 
-// Start the server
-app.listen(config.port, () => {
-  console.log(`Server running in ${config.env} mode on port ${config.port}`);
+let server: ReturnType<typeof app.listen>;
+
+beforeAll(() => {
+  // Start server on a different port for testing
+  const testPort = 3001;
+  server = app.listen(testPort);
+});
+
+afterAll(() => {
+  server?.close();
+});
+
+afterEach(() => {
+  // Clean up any test data or mocks here
 });

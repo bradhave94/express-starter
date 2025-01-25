@@ -26,60 +26,34 @@ export const endpoint2ResponseSchema = z.object({
 export type Endpoint2Response = z.infer<typeof endpoint2ResponseSchema>;
 export type Endpoint2Data = z.infer<typeof endpoint2DataSchema>;
 
-export const getData = async (
-  req: Request,
-  res: Response,
-  next: NextFunction
-) => {
-  try {
-    const data = await endpoint2Service.getData();
+export const getData = async () => {
+  const data = await endpoint2Service.getData();
 
-    // Validate response data
-    const result = endpoint2ResponseSchema.safeParse(data);
-    if (!result.success) {
-      console.error('Validation errors:', result.error.errors);
-      throw ApiError.internal('Invalid response format');
-    }
-
-    res.json({
-      success: true,
-      data: result.data
-    });
-  } catch (error) {
-    next(error);
+  // Validate response data
+  const result = endpoint2ResponseSchema.safeParse(data);
+  if (!result.success) {
+    console.error('Validation errors:', result.error.errors);
+    throw ApiError.internal('Invalid response format');
   }
+
+  return {
+    success: true,
+    data: result.data
+  };
 };
 
-export const createData = async (
-  req: Request,
-  res: Response,
-  next: NextFunction
-) => {
-  try {
-    const data = await endpoint2Service.createData(req.body);
+export const createData = async (data: Endpoint2Data) => {
+  const response = await endpoint2Service.createData(data);
 
-    // Validate response data
-    const result = endpoint2ResponseSchema.safeParse(data);
-    if (!result.success) {
-      console.error('Validation errors:', result.error.errors);
-      throw ApiError.internal('Invalid response format');
-    }
-
-    res.status(201).json({
-      success: true,
-      data: result.data
-    });
-  } catch (error) {
-    if (error instanceof Error) {
-      if (error.message.includes('already exists')) {
-        next(ApiError.badRequest('Task already exists', 'TASK_EXISTS'));
-      } else if (error.message.includes('invalid task type')) {
-        next(ApiError.badRequest('Invalid task type', 'INVALID_TASK_TYPE'));
-      } else {
-        next(error);
-      }
-    } else {
-      next(error);
-    }
+  // Validate response data
+  const result = endpoint2ResponseSchema.safeParse(response);
+  if (!result.success) {
+    console.error('Validation errors:', result.error.errors);
+    throw ApiError.internal('Invalid response format');
   }
+
+  return {
+    success: true,
+    data: result.data
+  };
 };

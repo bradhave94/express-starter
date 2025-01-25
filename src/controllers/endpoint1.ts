@@ -22,54 +22,34 @@ export const endpoint1ResponseSchema = z.object({
 export type Endpoint1Response = z.infer<typeof endpoint1ResponseSchema>;
 export type Endpoint1Data = z.infer<typeof endpoint1DataSchema>;
 
-export const getData = async (
-  req: Request,
-  res: Response,
-  next: NextFunction
-) => {
-  try {
-    const data = await endpoint1Service.getData();
+export const getData = async () => {
+  const data = await endpoint1Service.getData();
 
-    // Validate response data
-    const result = endpoint1ResponseSchema.safeParse(data);
-    if (!result.success) {
-      console.error('Validation errors:', result.error.errors);
-      throw ApiError.internal('Invalid response format');
-    }
-
-    res.json({
-      success: true,
-      data: result.data
-    });
-  } catch (error) {
-    next(error);
+  // Validate response data
+  const result = endpoint1ResponseSchema.safeParse(data);
+  if (!result.success) {
+    console.error('Validation errors:', result.error.errors);
+    throw ApiError.internal('Invalid response format');
   }
+
+  return {
+    success: true,
+    data: result.data
+  };
 };
 
-export const createData = async (
-  req: Request,
-  res: Response,
-  next: NextFunction
-) => {
-  try {
-    const data = await endpoint1Service.createData(req.body);
+export const createData = async (data: Endpoint1Data) => {
+  const response = await endpoint1Service.createData(data);
 
-    // Validate response data
-    const result = endpoint1ResponseSchema.safeParse(data);
-    if (!result.success) {
-      console.error('Validation errors:', result.error.errors);
-      throw ApiError.internal('Invalid response format');
-    }
-
-    res.status(201).json({
-      success: true,
-      data: result.data
-    });
-  } catch (error) {
-    if (error instanceof Error && error.message.includes('already exists')) {
-      next(ApiError.badRequest('Resource already exists', 'RESOURCE_EXISTS'));
-    } else {
-      next(error);
-    }
+  // Validate response data
+  const result = endpoint1ResponseSchema.safeParse(response);
+  if (!result.success) {
+    console.error('Validation errors:', result.error.errors);
+    throw ApiError.internal('Invalid response format');
   }
+
+  return {
+    success: true,
+    data: result.data
+  };
 };

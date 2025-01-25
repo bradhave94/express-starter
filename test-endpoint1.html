@@ -13,6 +13,13 @@
 <body>
     <h1>Endpoint1 Tests</h1>
 
+    <!-- CSRF Token Display -->
+    <div class="test-group">
+        <h2>CSRF Token</h2>
+        <button class="test-button" onclick="refreshCsrfToken()">Refresh CSRF Token</button>
+        <div id="csrf-status"></div>
+    </div>
+
     <!-- Valid Tests -->
     <div class="test-group">
         <h2>Valid Tests</h2>
@@ -28,9 +35,9 @@
         <button class="test-button" onclick="testMissingRequired()">Test Missing Required Fields</button>
     </div>
 
-    <!-- Rate Limit Test -->
+    <!-- Security Tests -->
     <div class="test-group">
-        <h2>Rate Limit Test</h2>
+        <h2>Security Tests</h2>
         <button class="test-button" onclick="testRateLimit()">Test Rate Limit (11 requests)</button>
     </div>
 
@@ -39,6 +46,37 @@
     <script>
         const API_URL = 'http://localhost:3000';
         const resultDiv = document.getElementById('result');
+        const csrfStatusDiv = document.getElementById('csrf-status');
+        let currentCsrfToken = null;
+
+        // Display CSRF token status
+        function updateCsrfStatus() {
+            csrfStatusDiv.textContent = currentCsrfToken ?
+                'CSRF Token: ' + currentCsrfToken.substring(0, 8) + '...' :
+                'No CSRF token available';
+            csrfStatusDiv.className = currentCsrfToken ? 'success' : 'error';
+        }
+
+        // Get a fresh CSRF token
+        async function refreshCsrfToken() {
+            try {
+                console.log('Fetching CSRF token...');
+                const response = await fetch(`${API_URL}/csrf`, {
+                    headers: {
+                        'Origin': window.location.origin,
+                        'User-Agent': navigator.userAgent,
+                    }
+                });
+                console.log('Response headers:', [...response.headers.entries()]);
+                currentCsrfToken = response.headers.get('x-csrf-token');
+                console.log('Received CSRF token:', currentCsrfToken);
+                updateCsrfStatus();
+                displayResult('CSRF token refreshed successfully');
+            } catch (error) {
+                console.error('Error refreshing token:', error);
+                displayResult(`Error refreshing CSRF token: ${error.message}`, true);
+            }
+        }
 
         function displayResult(response, error = false) {
             const pre = document.createElement('pre');
@@ -49,13 +87,41 @@
 
         async function makeRequest(endpoint, data = null, method = 'GET') {
             try {
+                // Get a fresh token if we don't have one and it's not a GET request
+                if (!currentCsrfToken && method !== 'GET') {
+                    await refreshCsrfToken();
+                }
+
+                const headers = {
+                    'Origin': window.location.origin,
+                    'User-Agent': navigator.userAgent,
+                };
+
+                if (method !== 'GET') {
+                    headers['Content-Type'] = 'application/json';
+                    headers['X-CSRF-Token'] = currentCsrfToken;
+                }
+
                 const response = await fetch(`${API_URL}${endpoint}`, {
                     method,
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
+                    headers,
                     body: data ? JSON.stringify(data) : undefined
                 });
+
+                // If we get a 403 and we had a token, try refreshing it once
+                if (response.status === 403 && currentCsrfToken) {
+                    await refreshCsrfToken();
+                    headers['X-CSRF-Token'] = currentCsrfToken;
+                    const retryResponse = await fetch(`${API_URL}${endpoint}`, {
+                        method,
+                        headers,
+                        body: data ? JSON.stringify(data) : undefined
+                    });
+                    const result = await retryResponse.json();
+                    displayResult(result, !retryResponse.ok);
+                    return result;
+                }
+
                 const result = await response.json();
                 displayResult(result, !response.ok);
                 return result;
@@ -70,7 +136,8 @@
             const data = {
                 name: 'John Doe',
                 email: 'john@example.com',
-                category: 'general'
+                category: 'general',
+                priority: 3
             };
             await makeRequest('/endpoint1', data, 'POST');
         }
@@ -79,7 +146,8 @@
             const data = {
                 name: 'Jane Smith',
                 email: 'jane@example.com',
-                category: 'technical'
+                category: 'technical',
+                priority: 2
             };
             await makeRequest('/endpoint1', data, 'POST');
         }
@@ -89,7 +157,8 @@
             const data = {
                 name: 'J',  // Too short
                 email: 'john@example.com',
-                category: 'general'
+                category: 'general',
+                priority: 3
             };
             await makeRequest('/endpoint1', data, 'POST');
         }
@@ -98,15 +167,17 @@
             const data = {
                 name: 'John Doe',
                 email: 'not-an-email',
-                category: 'general'
+                category: 'general',
+                priority: 3
             };
             await makeRequest('/endpoint1', data, 'POST');
         }
 
         async function testMissingRequired() {
             const data = {
-
-                // Missing email
+                category: 'general',
+                priority: 3
+                // Missing name and email
             };
             await makeRequest('/endpoint1', data, 'POST');
         }
@@ -116,13 +187,17 @@
             const data = {
                 name: 'John Doe',
                 email: 'john@example.com',
-                category: 'general'
+                category: 'general',
+                priority: 3
             };
 
             for (let i = 0; i < 11; i++) {
                 await makeRequest('/endpoint1', data, 'POST');
             }
         }
+
+        // Get initial CSRF token when page loads
+        refreshCsrfToken();
     </script>
 </body>
 </html>

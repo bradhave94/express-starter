@@ -1,12 +1,10 @@
-import dotenv from 'dotenv';
 import { cleanEnv, str, num } from 'envalid';
 
-dotenv.config();
-
-const env = cleanEnv(process.env, {
+// Use Bun's built-in .env handling
+const env = cleanEnv(Bun.env, {
   NODE_ENV: str({ choices: ['development', 'test', 'production'], default: 'development' }),
   PORT: num({ default: 3000 }),
-  ALLOWED_ORIGINS: str(),
+  ALLOWED_ORIGINS: str({ default: 'http://localhost:3000' }),
   ADDITIONAL_ORIGINS: str({ default: '' }),
   RATE_LIMIT_WINDOW_MS: num({ default: 900000 }), // 15 minutes
   RATE_LIMIT_MAX_REQUESTS: num({ default: 100 })

@@ -4,7 +4,7 @@ import { formLimiter, sanitizeResponse } from '../middleware/security';
 import { z } from 'zod';
 import type { Request, Response, NextFunction } from 'express';
 import { prioritySchema } from '../schemas/common';
-import { ValidationError } from '../utils/errors';
+import { ValidationError, ApiError } from '../utils/errors';
 
 // Define Zod schema for endpoint2
 const endpoint2Schema = z.object({
@@ -41,13 +41,31 @@ const validateEndpoint2 = (req: Request, res: Response, next: NextFunction) => {
 
 const router = Router();
 
-router.get('/', endpoint2Controller.getData);
+router.get('/', async (req: Request, res: Response, next: NextFunction) => {
+  try {
+    const result = await endpoint2Controller.getData();
+    res.json(result);
+  } catch (error) {
+    next(error);
+  }
+});
 
 router.post('/',
-  formLimiter,           // Rate limiting
-  validateEndpoint2,     // Zod validation
-  sanitizeResponse,      // Response sanitization
-  endpoint2Controller.createData
+  formLimiter,
+  validateEndpoint2,
+  sanitizeResponse,
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const result = await endpoint2Controller.createData(req.body);
+      res.status(201).json(result);
+    } catch (error) {
+      if (error instanceof Error && error.message.includes('already exists')) {
+        next(ApiError.badRequest('Resource already exists', 'RESOURCE_EXISTS'));
+      } else {
+        next(error);
+      }
+    }
+  }
 );
 
 export default router;

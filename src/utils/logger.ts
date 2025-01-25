@@ -1,24 +1,22 @@
-import winston from 'winston';
+// Replace Winston with Bun's built-in logger
 import { config } from '../config';
 
-const format = winston.format.combine(
-  winston.format.timestamp(),
-  winston.format.json()
-);
-
-const logger = winston.createLogger({
+const logger = {
   level: config.env === 'production' ? 'info' : 'debug',
-  format,
-  transports: [
-    new winston.transports.Console({
-      format: winston.format.combine(
-        winston.format.colorize(),
-        winston.format.simple()
-      )
-    }),
-    new winston.transports.File({ filename: 'logs/error.log', level: 'error' }),
-    new winston.transports.File({ filename: 'logs/combined.log' })
-  ]
-});
+
+  info(message: string, meta?: Record<string, unknown>) {
+    console.log(`[INFO] ${message}`, meta || '');
+  },
+
+  error(message: string, meta?: Record<string, unknown>) {
+    console.error(`[ERROR] ${message}`, meta || '');
+  },
+
+  debug(message: string, meta?: Record<string, unknown>) {
+    if (this.level === 'debug') {
+      console.debug(`[DEBUG] ${message}`, meta || '');
+    }
+  }
+};
 
 export default logger;

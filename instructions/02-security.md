@@ -69,3 +69,27 @@ This document outlines the security measures and best practices implemented in t
 6. Regular security audits
 7. Test validation with edge cases
 8. Document schema requirements
+9. Validate all environment variables through envalid
+10. Use `node:crypto` for cryptographic operations
+11. Consider SQLite for rate limiting storage
+
+## Bun-Specific Security Considerations
+
+1. **Environment Variables**
+   - Use `Bun.env` for environment variables
+   - Validate all env variables through envalid
+   - Keep sensitive data in `.env`
+
+2. **Crypto Operations**
+   ```typescript
+   // Use node:crypto for compatibility
+   import { randomUUID } from 'node:crypto';
+
+   // Instead of
+   // import crypto from 'crypto';
+   ```
+
+3. **Performance Considerations**
+   - Leverage Bun's fast startup time
+   - Use Bun's built-in fetch when applicable
+   - Consider Bun's SQLite for rate limiting storage

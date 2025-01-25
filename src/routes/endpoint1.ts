@@ -1,10 +1,11 @@
 import { Router } from 'express';
 import * as endpoint1Controller from '../controllers/endpoint1';
 import { formLimiter, sanitizeResponse } from '../middleware/security';
+import { csrfProtection } from '../middleware/csrf';
 import { z } from 'zod';
 import type { Request, Response, NextFunction } from 'express';
 import { emailSchema, nameSchema, prioritySchema } from '../schemas/common';
-import { ValidationError } from '../utils/errors';
+import { ValidationError, ApiError } from '../utils/errors';
 
 // Define Zod schema for endpoint1
 const endpoint1Schema = z.object({
@@ -51,13 +52,35 @@ const validateEndpoint1 = (req: Request, res: Response, next: NextFunction) => {
 
 const router = Router();
 
-router.get('/', endpoint1Controller.getData);
+router.get('/',
+  csrfProtection,
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const result = await endpoint1Controller.getData();
+      res.json(result);
+    } catch (error) {
+      next(error);
+    }
+  }
+);
 
 router.post('/',
-  formLimiter,           // Rate limiting
-  validateEndpoint1,     // Zod validation
-  sanitizeResponse,      // Response sanitization
-  endpoint1Controller.createData
+  formLimiter,
+  csrfProtection,
+  validateEndpoint1,
+  sanitizeResponse,
+  async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const result = await endpoint1Controller.createData(req.body);
+      res.status(201).json(result);
+    } catch (error) {
+      if (error instanceof Error && error.message.includes('already exists')) {
+        next(ApiError.badRequest('Resource already exists', 'RESOURCE_EXISTS'));
+      } else {
+        next(error);
+      }
+    }
+  }
 );
 
 export default router;

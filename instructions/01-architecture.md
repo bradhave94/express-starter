@@ -46,6 +46,28 @@ This document explains the architectural decisions and patterns used in this Typ
 - Document API contracts
 - Separate by domain
 
+## Bun-Specific Considerations
+
+1. **Environment Variables**
+   - Use `Bun.env` instead of `process.env`
+   - Configure envalid with Bun.env
+   - Keep environment validation strict
+
+2. **Server Setup**
+   ```typescript
+   // Standard Express setup with Bun
+   app.listen(config.port, () => {
+     console.log(`Server running in ${config.env} mode on port ${config.port}`);
+   }).on('error', (err) => {
+     console.error('Server failed to start:', err);
+     process.exit(1);
+   });
+   ```
+
+3. **Crypto Operations**
+   - Use `node:crypto` for compatibility
+   - Consider Bun's crypto API for future updates
+
 ## Best Practices
 
 1. Always maintain type safety
@@ -54,3 +76,6 @@ This document explains the architectural decisions and patterns used in this Typ
 4. Use dependency injection
 5. Follow SOLID principles
 6. Document code changes
+7. Use `node:crypto` for cryptographic operations
+8. Configure environment with envalid using `Bun.env`
+9. Implement proper server error handling

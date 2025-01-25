@@ -53,3 +53,27 @@ This document explains the type system implementation and best practices.
 4. Document complex types
 5. Use utility types when appropriate
 6. Keep interfaces focused and small
+7. Use type imports for better tree-shaking
+8. Maintain proper environment variable types
+9. Keep Express types for request/response handling
+
+## Bun-Specific Type Considerations
+
+1. **Environment Types**
+   ```typescript
+   // Use Bun's types for env
+   declare global {
+     namespace NodeJS {
+       interface ProcessEnv {
+         PORT: string;
+         NODE_ENV: 'development' | 'production' | 'test';
+         // ... other env vars
+       }
+     }
+   }
+   ```
+
+2. **Express Integration**
+   - Keep Express types for request/response
+   - Use type imports for better tree-shaking
+   - Consider Bun's native types for future updates
